@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="simyo_window_title_background" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/titlebar_background</item>
+    </style>
+
+    <style name="simyo_edittext" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="simyo_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="widget_row">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/widget_cell</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="widget_big_row_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="widget_big_row_text_small">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="widget_total_row" parent="@style/widget_row">
+        <item name="android:background">@drawable/widget_total</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="widget_small_row_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="widget_small_row">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/widget_cell</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="widget_small_total_row" parent="@style/widget_small_row">
+        <item name="android:background">@drawable/widget_total</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    
+</resources>

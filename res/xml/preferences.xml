@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+            android:title="Credenciales de acceso"
+            android:summary="Indique su usuario y clave"
+            android:key="loginPref" />
+    <es.gimix.simyo.settings.TimeBarPreference
+            android:title="Actualización por Wifi"
+            android:summary="Nunca"
+            android:key="wifiPref"
+            android:defaultValue="0" />
+    <es.gimix.simyo.settings.TimeBarPreference
+            android:title="Actualización por 3G"
+            android:summary="Nunca"
+            android:key="3gPref"
+            android:defaultValue="8" />
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+[submodule "android-actionbar"]
+	path = android-actionbar
+	url = ./android-actionbar
+[submodule "HoloEverywhere"]
+	path = HoloEverywhere
+	url = ./HoloEverywhere/
+[submodule "ActionBarSherlock"]
+	path = ActionBarSherlock
+	url = ./ActionBarSherlock/
+[submodule "dependencies/AndroidBillingLibrary"]
+	path = dependencies/AndroidBillingLibrary
+	url = git://github.com/robotmedia/AndroidBillingLibrary.git

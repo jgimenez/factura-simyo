@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.gimix.simyo"
+    android:installLocation="internalOnly"
+    android:versionCode="2292"
+    android:versionName="2.2.9.2" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+	
+    <application
+        android:name=".FacturaSimyoApp"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.HoloEverywhereDark.Sherlock" >
+        <activity
+            android:name=".FacturaSimyoActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.CredentialsActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/MyDialogTheme" >
+        </activity>
+        <activity
+            android:name=".widget.AppWidgetConfigure"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:taskAffinity="es.gimix.simyo.AppWidgetConfigure"
+            android:theme="@style/MyDialogTheme" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".settings.SimyoSettings"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- Small widget is the old one, so the name of the class must stay the same for backwards compatibility -->
+        <receiver android:name=".widget.WidgetProvider" android:label="@string/widget_description_small">
+            <intent-filter>
+                <action android:name="es.gimix.simyo.status.UPDATED" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="es.gimix.simyo.status.WORKING" />
+                <action android:name="es.gimix.simyo.status.CANCELLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <receiver android:name=".widget.BigWidgetProvider" android:label="@string/widget_description_big">
+            <intent-filter>
+                <action android:name="es.gimix.simyo.status.UPDATED" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="es.gimix.simyo.status.WORKING" />
+                <action android:name="es.gimix.simyo.status.CANCELLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/big_widget_info" />
+        </receiver>
+        <receiver android:name=".controller.QueryReceiver" >
+            <intent-filter>
+                <action android:name="es.gimix.simyo.OPPORTUNISTIC_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="es.gimix.simyo.FORCE_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".controller.WifiConnectivityReceiver"
+            android:enabled="true"
+            android:label="WifiConnectivityReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="es.gimix.util.SecretCodeReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+
+                <data
+                    android:host="65383"
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- In-app billing -->
+        <service android:name="net.robotmedia.billing.BillingService" />
+			<receiver android:name="net.robotmedia.billing.BillingReceiver">
+			    <intent-filter>
+			        <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+			        <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+			        <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+			    </intent-filter>
+			</receiver>
+    </application>
+
+</manifest>

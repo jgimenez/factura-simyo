@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_widget"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/glow_small"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/number"
+        style="@style/widget_small_row_text"
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:background="@drawable/widget_header_small"
+        android:gravity="right|bottom"
+        android:paddingBottom="2dp"
+        android:paddingRight="14dp"
+        android:textColor="@color/number" />
+
+    <LinearLayout
+        android:id="@+id/rowa"
+        style="@style/widget_small_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:weightSum="1.00" >
+
+        <TextView
+            android:id="@+id/a1"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40" />
+
+        <TextView
+            android:id="@+id/a2"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.24"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/a3"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowb"
+        style="@style/widget_small_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:weightSum="1.00" >
+
+        <TextView
+            android:id="@+id/b1"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40" />
+
+        <TextView
+            android:id="@+id/b2"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.24"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/b3"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowc"
+        style="@style/widget_small_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:weightSum="1.00" >
+
+        <TextView
+            android:id="@+id/c1"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40" />
+
+        <TextView
+            android:id="@+id/c2"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.24"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/c3"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowd"
+        style="@style/widget_small_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:weightSum="1.00" >
+
+        <TextView
+            android:id="@+id/d1"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40" />
+
+        <TextView
+            android:id="@+id/d2"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.24"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/d3"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowe"
+        style="@style/widget_small_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:weightSum="1.00" >
+
+        <TextView
+            android:id="@+id/e1"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40" />
+
+        <TextView
+            android:id="@+id/e2"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.24"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/e3"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/widget_small_total_row"
+        android:layout_height="0dip"
+        android:layout_weight="1.1"
+        android:gravity="center_vertical"
+        android:weightSum="1.00" >
+
+        <TextView
+            android:id="@+id/totalLabel"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40" />
+
+        <TextView
+            android:id="@+id/total"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.24"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/lastUpdated"
+            style="@style/widget_small_row_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:gravity="right"
+            android:text="@string/widget_reloading" />
+    </LinearLayout>
+
+</LinearLayout>

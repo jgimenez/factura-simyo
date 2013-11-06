@@ -1,0 +1,7 @@
+bin
+gen
+.project
+.classpath
+.settings
+gimix-release-key.keystore
+local.properties

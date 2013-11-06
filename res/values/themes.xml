@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="MyDialogTheme" parent="@style/Theme.Sherlock.Dialog">
+
+        <!-- Any customizations for your app running on pre-3.0 devices here -->
+        <item name="android:editTextStyle">@style/simyo_edittext</item>
+        <item name="android:buttonStyle">@style/simyo_button</item>
+    </style>
+
+</resources>

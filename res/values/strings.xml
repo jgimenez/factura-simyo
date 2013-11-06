@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Factura Simyo</string>
+    <string name="action_label_refresh">Actualizar</string>
+    <string name="action_label_settings">Preferencias</string>
+    <string name="action_label_donate">Donar</string>
+    <string name="donation_thanks">¡Muchas gracias por colaborar en el desarrollo de Factura Simyo!</string>
+    <string name="action_label_about">Acerca de</string>
+    <string name="action_label_web">Sitio web</string>
+    <string name="action_label_email">Correo electrónico</string>
+    <string name="login_activity_username_label">Usuario</string>
+    <string name="login_activity_password_label">Clave</string>
+    <string name="login_activity_ok_button">Guardar</string>
+    <string name="login_activity_loginfail_infomissing">Por favor, indica usuario y clave</string>
+    <string name="login_activity_footer">* Sus datos serán tratados de forma confidencial y nunca se compartirán con terceros.</string>
+    <string name="login_activity_reloading">Cargando datos&#8230;\nEsto puede tardar minutos!</string>
+    <string name="login_notification_ticker">Área personal</string>
+    <string name="login_notification_title">Factura Simyo: Área personal</string>
+    <string name="login_notification_text_missing">Necesita indicar su usuario y clave de acceso al área personal</string>
+    <string name="instructions">Para añadir el widget en tu pantalla principal haz un toque largo en un espacio vacío y selecciona <b>Widgets</b>. Puedes poner varios si tienes varias líneas. </string>
+    <string name="configurar_datos_acceso">Configura tus datos de acceso</string>
+    <string name="actualizar_ahora">Actualizar ahora</string>
+    <string name="ad">¿Tienes sugerencias?\n¿Necesitas una aplicación para tu negocio?\n¡Contacta con nosotros!</string>
+    <string name="about_title">Acerca de&#8230;</string>
+    <string name="about_author">Jordi Giménez y Mobile Jazz</string>
+    <string name="about_web"><u>www.mobilejazz.cat</u></string>
+    <string name="about_email"><u>jordi@mobilejazz.cat</u></string>
+    <string name="about_contact">Contacta con nosotros</string>
+    <string name="about_license">&#169; 2013 Jordi Giménez\n&#169; 2013 Mobile Jazz, S.L\nTodos los derechos reservados.\nLos autores no tienen ninguna relación con Simyo.
+\n\nEste software utiliza las siguientes librerías:
+\n<b>Action Bar Sherlock</b>
+\n&#169; 2012 Jake Wharton
+\n
+\nLicensed under the Apache License, Version 2.0 (the "License");
+\nyou may not use this file except in compliance with the License.
+\nYou may obtain a copy of the License at
+\n
+\n   http://www.apache.org/licenses/LICENSE-2.0
+\n
+\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+\nSee the License for the specific language governing permissions and
+limitations under the License.
+\n
+\n<b>HoloEverywhere</b>
+\n“THE BEER-WARE LICENSE”:
+\nAs long as you retain this notice you can do whatever you want with this stuff.
+\nIf we meet some day, and you think this stuff is worth it, you can buy me a beer in return
+\nI also accept Paypal donations to christophe.versieux@gmail.com
+(you may offer me multiple beers as they are very cheap in Belgium)
+\n
+\n<b>jsoup</b>
+\n&#169; 2009 - 2012 Jonathan Hedley (jonathan@hedley.net)
+\n
+\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+\n
+\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+\n
+\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </string>
+    <string name="disclaimer">El autor de esta aplicación no tiene ninguna relación con Simyo.</string>
+    <string name="widget_reloading">cargando&#8230;</string>
+    <string name="widget_description_big">Factura Simyo (grande)</string>
+    <string name="widget_description_small">Factura Simyo (pequeño)</string>
+    <string name="about_logo_description">Mobile Jazz</string>
+	<string name="checkbox_title">Cambios en el área personal</string>
+    <string name="checkbox_message">Estimado usuario,
+\nSimyo está mejorando el área personal, y de momento hay menos datos disponibles para mostrar.
+\nHemos actualizado la aplicación para que funcione con los datos disponibles e iremos añadiendo más a medida que sea posible.
+\nSi experimentas problemas con esta nueva versión no dudes en contactar con nosotros.
+\nDisculpa las molestias.</string>
+	<string name="checkbox_dismiss">No volver a mostrar</string>
+    
+    <string-array name="time_strings">
+        <item>3 horas</item>
+        <item>6 horas</item>
+        <item>12 horas</item>
+        <item>1 día</item>
+        <item>2 días</item>
+        <item>4 días</item>
+        <item>7 días</item>
+        <item>15 días</item>
+        <item>nunca</item>
+    </string-array>
+    <integer-array name="time_values">
+        <item>10800</item>
+        <item>21600</item>
+        <item>43200</item>
+        <item>86400</item>
+        <item>172800</item>
+        <item>345600</item>
+        <item>604800</item>
+        <item>1296000</item>
+        <item>2147483647</item><!-- max integer -->
+    </integer-array>
+    <string name="widget_config_title">Línea a mostrar</string>
+</resources>
