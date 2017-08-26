@@ -1,0 +1,20 @@
+bug: not enough room for 5 items in widget
+
+update button in widget
+encrypt password
+password and data policy
+stack overflow in goto, in infinite redirections
+totals of every month
+chart with montly consumption
+pdf download of invoice
+several accounts
+total in prepaid
+summary of all lines in widget
+
+miandroigo:
+factura PDF
+data consumption progress bar
+name of tarifa
+call/SMS log with contact picture
+
+landscape view (enhance) : http://androidforums.com/application-development/45136-there-way-determine-actual-pixel-size-your-appwidget.html
